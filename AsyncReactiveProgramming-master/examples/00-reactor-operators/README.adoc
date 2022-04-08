@@ -1,0 +1,32 @@
+= Example 00. Project Reactor operators
+Marcos de la Calle Samaniego, @marcosDLCS <marcos.dlcs@gmail.com>
+v1.0.0, 2020-11-28
+:toc:
+
+== ℹ️ About
+
+This project contains tests to demonstrate *the use of Mono, Flux and their main operators*, as well as the use of utilities such as *StepVerifier* and *TestPublisher*.
+
+The basic structure of each project has been generated through *IntelliJ Idea Gradle porject generator*.
+
+== 📚 Stack
+
+* *Language:* Java 15 (SDKMan + AdoptOpenJDK)
+* *Libraries*: Reactor core
+* *Test Engine*: JUnit 5
+* *Test Libraries*: Reactor test, JavaFaker
+* *Build and dependency management:* Gradle
+
+== 💁‍♀️ Useful information
+
+=== 🚀 How to launch the project?
+
+The project is designed to be executed from your integrated development environment.
+
+It is a collection of tests created to know the different operators and how they can be combined.
+
+== 🦮 Guides
+
+* https://projectreactor.io/docs/core/release/reference/#which-operator[Project Reactor Docs. Appendix A: Which operator do I need?]
+* https://www.baeldung.com/reactive-streams-step-verifier-test-publisher[Testing Reactive Streams Using StepVerifier and TestPublisher]
+* https://www.baeldung.com/java-faker[A Guide to JavaFaker]

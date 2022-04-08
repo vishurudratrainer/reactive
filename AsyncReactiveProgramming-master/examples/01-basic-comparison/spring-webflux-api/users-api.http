@@ -1,0 +1,38 @@
+GET http://localhost:8080/users
+Accept: application/json
+
+###
+
+GET http://localhost:8080/users/a879d2bc-fe58-4d4f-91f9-05607ea3427b
+Accept: application/json
+
+###
+
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": "{{$uuid}}",
+  "name": "Clement",
+  "surname": "Escoffier-{{$randomInt}}",
+  "email": "clement.escoffier@user.com"
+}
+
+###
+
+PUT http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "id": "a879d2bc-fe58-4d4f-91f9-05607ea3427a",
+  "name": "Mr. Clement",
+  "surname": "Escoffier-{{$randomInt}}",
+  "email": "mr.clement.escoffier@user.com"
+}
+
+###
+
+DELETE http://localhost:8080/users/a879d2bc-fe58-4d4f-91f9-05607ea3427a
+Accept: application/json
+
+###

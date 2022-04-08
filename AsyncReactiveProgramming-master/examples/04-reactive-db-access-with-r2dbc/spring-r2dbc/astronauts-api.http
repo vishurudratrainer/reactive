@@ -1,0 +1,59 @@
+GET http://localhost:8080/astronauts
+Accept: application/json
+
+###
+
+GET http://localhost:8080/astronauts/358
+Accept: application/json
+
+###
+
+GET http://localhost:8080/astronauts/random
+Accept: application/json
+
+###
+
+GET http://localhost:8080/astronauts/filter?name=Arm
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/astronauts/250
+Accept: application/json
+
+###
+
+POST http://localhost:8080/astronauts
+Content-Type: application/json
+
+{
+  "name": "Jane Smith",
+  "status": "A",
+  "birthPlace": "Austin, TX",
+  "gender": "F",
+  "spaceFlights": 4,
+  "spaceWalks": 10,
+  "missions": "All"
+}
+
+###
+
+PUT http://localhost:8080/astronauts
+Content-Type: application/json
+
+{
+  "id": 1000,
+  "name": "John Doe",
+  "status": "A",
+  "birthPlace": "Indianapolis, IN",
+  "gender": "M",
+  "spaceFlights": 4,
+  "spaceWalks": 7,
+  "missions": "All"
+}
+
+
+
+
+
+

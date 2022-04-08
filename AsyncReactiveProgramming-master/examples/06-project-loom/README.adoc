@@ -1,0 +1,40 @@
+= Example 06. Project Loom
+Marcos de la Calle Samaniego, @marcosDLCS <marcos.dlcs@gmail.com>
+v1.0.0, 2020-12-07
+:toc:
+
+== ℹ️ About
+
+This project contains small examples and code snippets to test the new features that Java incorporates with Project Loom
+
+The list of examples is as follows:
+
+* Hello Loom
+* Loom Thread Builder
+* Three Million Tasks
+* Structured Concurrency
+* Cancellations and Deadlines
+
+== 📚 Stack
+
+* *Language:* Java 16 Early Access *(SDKMan) java 16.ea.9.lm-open*
+* *Libraries*: JUnit 5, AssertJ
+* *Build and dependency management:* Maven
+
+== 💁‍♀️ Useful information
+
+=== 🚀 How to launch the project?
+
+To start this project you only need to have an early access version of Java *(Java 16+ EA)* with Project Loom.
+
+You can use SDKMan to get the latest updated build.
+
+The project is designed to be executed from your favorite IDE (the tests have been carried out on IntelliJ Idea without problems).
+
+== 🦮 Guides
+
+* https://wiki.openjdk.java.net/display/loom/Main[OpenJDK Loom Wiki]
+* https://github.com/openjdk/loom[Project Loom repository]
+* https://jdk.java.net/loom/[Project Loom Early-Access Builds]
+* https://www.baeldung.com/openjdk-project-loom[OpenJDK Project Loom - Baeldung]
+* https://www.javaadvent.com/2020/12/project-loom-and-structured-concurrency.html[Project Loom and structured concurrency]
