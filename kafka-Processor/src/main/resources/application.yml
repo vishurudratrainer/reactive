@@ -1,0 +1,14 @@
+spring.cloud.stream:
+  function:
+    definition: cubeProcessor
+  bindings:
+    cubeProcessor-in-0:
+      destination: numbers
+    cubeProcessor-out-0:
+      destination: cubeNumbers
+  kafka:
+    binder:
+      brokers:
+        - localhost:9092
+server.port: 9085
+debug: true

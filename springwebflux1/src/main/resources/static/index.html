@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+function myFunction() {
+   var evtSource = new EventSource("http://localhost:8080/reactivegetall");
+    evtSource.onmessage = function (event) {
+        console.log(event);
+        var data = JSON.parse(event.data);
+        console.log(data);
+        let p = document.createElement('p');
+        p.innerHTML = data;
+        document.body.appendChild(p);
+
+}
+}
+</script>
+</head>
+<body>
+<table id="mytable">
+
+</table>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+
+
+</body>
+</html>

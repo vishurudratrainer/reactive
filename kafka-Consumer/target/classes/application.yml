@@ -1,0 +1,15 @@
+spring.cloud.stream:
+  function:
+    definition: cubeConsumer
+  bindings:
+    cubeConsumer-in-0:
+      destination: numbers
+  kafka:
+    binder:
+      brokers:
+        - localhost:9092
+spring:
+  application:
+    name: kafka-consumer
+server.port: 9095
+debug: true
